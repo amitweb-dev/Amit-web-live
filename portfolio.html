@@ -1,61 +1,200 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amit Web-page</title>
-     <link rel="shortcut icon" href="images/amit.jpg" type="image/png">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>@media (min-width:1200px) {
-        .rows{
-            margin-top: 25px;
-        }
-    }</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit Web-page</title>
+  <link rel="shortcut icon" href="images/amit.jpg" type="image/png">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&amp;family=Dosis:wght@200;300;400;500&amp;family=Joan&amp;family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&amp;family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500&amp;display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="header">
-       
-        <nav class="navbar navbar-expand-md mobile-container navbar-dark">
-            <a href="index.html"><img src="images/logopng.png" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav topnav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PORTFOLIO</a>
-                </li>  
-                <li class="nav-item">
-                    <a class="nav-link" id="number" href="tel:9570687339"><i class="bi bi-telephone bi-2x"></i> 9570687339 </a><br>
-                  </li>    
-              </ul>
-            </div>  
-          </nav>
+  <div class="header" style="height: auto ;">
+
+    <nav class="navbar navbar-expand-md mobile-container navbar-dark">
+      <img src="images/logopng.png" class="logo">
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav topnav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="number" href="tel:9570687339"><i class="bi bi-telephone bi-2x"></i> 9570687339
+            </a><br>
+          </li>
+        </ul>
+      </div>
 
 
-          <div class="row rows">
-            <div class="col-md-4 col-sm-6"><img src="images/myimages.jpg" class="rounded-circle aboutimg"></div>
-            <div class="col-md-8 col-sm-6"><p style="line-height: 1.8; margin: 0 0 11px;  text-align: justify; font-family: 'Axiforma-Regular' !important; font-weight: 700;"><span style="color: #ffc600; font-weight: 1000;">Hey I Am Amit Jha .</span>  I am Web Devloper or UI Designer. and I am currently working as a UI Designer with Gapi Infotech pvt. ltd company. I have excellent knowledge of HTML5, CSS3, BOOTSTRAP, JAVASCRIPT AND JQUERY And also i have good knowledge of Angular 6,7,8 and Angular Js, so You can reach out to me if you need any help in making a
-                website for you or your business, i have completed three projects and also I am currently working on B2B and B2C type portal. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia debitis minima nemo corrupti modi facere animi repellendus fugiat esse tempora accusantium natus placeat obcaecati vero ducimus architecto in, provident dolorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam exercitationem quas animi ipsam, ipsa impedit facere inventore repellendus,. Officia debitis minima nemo corrupti modi facere animi repellendus fugiat esse tempora accusantium natus placeat obcaecati vero ducimus architecto in, provident dolorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam exercitationem quas animi ipsam, ipsa impedit facere inventore repellendus, quam possimus labore perferendis facilis ipsum, odio ut id tempore illum ullam.......</p></div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="nav-link" href="index.html">HOME</a>
+        <a class="nav-link" href="about.html">ABOUT</a>
+        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+        <a class="nav-link" id="number" href="tel:9570687339"><i class="bi bi-telephone bi-2x"></i> 9570687339 </a>
+
+      </div>
+
+      <button class="navbar-toggler" type="button" onclick="openNav()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+        <div class="text-box" style="margin-top:0%;">
+             <p style="line-height: 1.8; margin: 0 0 11px;  text-align: justify;  font-weight: 700;"> 
+              <span style="color: #ffc600; font-weight: 1000;"><span class="las la-smile la-2x"></span>I has made</span> some portfolio only purpose of education, Interview and knowledge and That's the Design.. </p>
+       </div>
+
+
+       <div class="row">
+
+     
+       <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+        <figure class="card card-product-grid">
+            <div class="img-wrap">
+                <img src="./images/nine.png">
+            </div>
+            <figcaption class="info-wrap border-top">
+                <p class="title mb-2"><span
+                        style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* E-Commerce Design</span></p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+      <figure class="card card-product-grid">
+          <div class="img-wrap">
+              <img src="./images/eight.png">
           </div>
+          <figcaption class="info-wrap border-top">
+              <p class="title mb-2"><span
+                      style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* Pricing Design</span></p>
+          </figcaption>
+      </figure>
+  </div>
 
-       
-
-    <div class="footer" style="color: #ffc600; width: 100%; text-align: center; bottom: 0; position: fixed;"><p>© 2021 All rights reserved. Made by Amit Jha.</p></div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+    <figure class="card card-product-grid">
+        <div class="img-wrap">
+            <img src="./images/seven.png">
+        </div>
+        <figcaption class="info-wrap border-top">
+            <p class="title mb-2"><span
+                    style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* Input Form In Front</span></p>
+        </figcaption>
+    </figure>
 </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+  <figure class="card card-product-grid">
+      <div class="img-wrap">
+          <img src="./images/six.png">
+      </div>
+      <figcaption class="info-wrap border-top">
+          <p class="title mb-2"><span
+                  style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* Portal Design</span></p>
+      </figcaption>
+  </figure>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+  <figure class="card card-product-grid">
+      <div class="img-wrap">
+          <img src="./images/five.png">
+      </div>
+      <figcaption class="info-wrap border-top">
+          <p class="title mb-2"><span
+                  style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* Sample Of Design</span></p>
+      </figcaption>
+  </figure>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+  <figure class="card card-product-grid">
+      <div class="img-wrap">
+          <img src="./images/twelve.png">
+      </div>
+      <figcaption class="info-wrap border-top">
+          <p class="title mb-2"><span
+                  style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* Responsive Cards</span></p>
+      </figcaption>
+  </figure>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+  <figure class="card card-product-grid">
+      <div class="img-wrap">
+          <img src="./images/two.jpg">
+      </div>
+      <figcaption class="info-wrap border-top">
+          <p class="title mb-2"><span
+                  style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* Responsive design Of Pharmacy</span></p>
+      </figcaption>
+  </figure>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+  <figure class="card card-product-grid">
+      <div class="img-wrap">
+          <img src="./images/one.png">
+      </div>
+      <figcaption class="info-wrap border-top">
+          <p class="title mb-2"><span
+                  style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* E-commerce design</span></p>
+      </figcaption>
+  </figure>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+  <figure class="card card-product-grid">
+      <div class="img-wrap">
+          <img src="./images/eleven.png">
+      </div>
+      <figcaption class="info-wrap border-top">
+          <p class="title mb-2"><span
+                  style="color: rgb(157, 35, 35); font-weight: 600; font-size: 14px;">* Responsive table</span></p>
+      </figcaption>
+  </figure>
+</div>
+
+
+</div>
+
+
+
+    <div class="footer" style="color: #ffc600; width: 100%; bottom: 0; position: fixed;">
+      <p>© 2021 All rights reserved. Made by Amit Jha.</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    
+  </script>
 </body>
+
 </html>
